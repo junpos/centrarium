@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "새로운 시작"
+date:   2017-03-29 01:43:59
+author: junpos
+categories: etc
+---
+
+새로운 블로그를 열었다. 앞으로 여기에 자주 글을 써내려 가야지 ㅎㅎ!
