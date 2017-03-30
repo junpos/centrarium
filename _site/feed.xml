@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Junpos</title>
+    <description>A simple yet classy theme for your Jekyll website or blog.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 29 Mar 2017 23:27:04 -0400</pubDate>
+    <lastBuildDate>Wed, 29 Mar 2017 23:27:04 -0400</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>새로운 시작</title>
+        <description>&lt;p&gt;새로운 블로그를 열었다. 앞으로 여기에 자주 글을 써내려 가야지 ㅎㅎ!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Mar 2017 21:43:59 -0400</pubDate>
+        <link>http://localhost:4000/etc/2017/03/28/start.html</link>
+        <guid isPermaLink="true">http://localhost:4000/etc/2017/03/28/start.html</guid>
+        
+        
+        <category>etc</category>
+        
+      </item>
+    
+  </channel>
+</rss>
