@@ -9,6 +9,10 @@
 <lastmod>2017-03-28T21:43:59-04:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/react/2017/04/02/React-aha-moments.html</loc>
+<lastmod>2017-04-02T13:20:59-04:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -25,5 +29,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/etc/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/react/</loc>
 </url>
 </urlset>
