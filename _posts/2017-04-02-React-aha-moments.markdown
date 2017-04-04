@@ -3,7 +3,7 @@ layout: post
 title:  "React: 'aHa' Moments"
 date:   2017-04-02 17:20:59
 author: Jun Kim
-categories: react
+categories: React
 ---
 
 ### React "aHa" Moments

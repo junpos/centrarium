@@ -3,7 +3,7 @@ layout: post
 title:  "new start"
 date:   2017-03-29 01:43:59
 author: Jun Kim
-categories: personal
+categories: Personal
 ---
 
 새로운 블로그를 열었다. 여기에 쓰여지는 대부분의 글들은 프로그래밍 관련 글이 될것이다. 현재 관심있게 공부하고 있는 javascript ES6와 React관련 기술(Flux, Redux, MobX)과 디자인 패턴들을 위주로 글을 올릴 생각이다.

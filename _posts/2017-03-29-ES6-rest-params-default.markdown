@@ -3,7 +3,7 @@ layout: post
 title:  "ES6: Rest and defaults parameters"
 date:   2017-03-29 01:43:59
 author: Jun Kim
-categories: es6
+categories: ES6
 ---
 
 ### Rest parameters

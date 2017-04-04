@@ -2,31 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Junpos</title>
-    <description>A simple yet classy theme for your Jekyll website or blog.
-</description>
+    <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Apr 2017 20:31:52 -0400</pubDate>
-    <lastBuildDate>Sun, 02 Apr 2017 20:31:52 -0400</lastBuildDate>
+    <pubDate>Mon, 03 Apr 2017 22:05:20 -0400</pubDate>
+    <lastBuildDate>Mon, 03 Apr 2017 22:05:20 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
-        <title>React: aha Moments</title>
-        <description>&lt;h3 id=&quot;react-aha-moments&quot;&gt;React “aha Moments”&lt;/h3&gt;
+        <title>ES6: Spread Operator</title>
+        <description>&lt;p&gt;ES6에서 소개된 &lt;em&gt;Spread Operator&lt;/em&gt; 의 여러가지 활용 방법에 대해서 간단히 알아보자.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Apr 2017 21:25:04 -0400</pubDate>
+        <link>http://localhost:4000/es6/2017/04/02/ES6-spread-operator.html</link>
+        <guid isPermaLink="true">http://localhost:4000/es6/2017/04/02/ES6-spread-operator.html</guid>
+        
+        
+        <category>ES6</category>
+        
+      </item>
+    
+      <item>
+        <title>React: 'aHa' Moments</title>
+        <description>&lt;h3 id=&quot;react-aha-moments&quot;&gt;React “aHa” Moments&lt;/h3&gt;
 
 &lt;p&gt;이 글은 React Newsletter 이슈 69에 실린 &lt;a href=&quot;https://tylermcginnis.com/react-aha-moments/?utm_campaign=React%2BNewsletter&amp;amp;utm_medium=web&amp;amp;utm_source=React_Newsletter_69&quot;&gt;React “Aha” Moments&lt;/a&gt; 의 번역글이고 매끄러운 번역을 위해 과감하게 생략/의역/부연설명을 하였다.&lt;/p&gt;
 
 &lt;h4 id=&quot;1-fnd--v-your-ui-is-a-function-of-your-state-and-props-are-to-components-what-arguments-are-to-functions&quot;&gt;1) &lt;code class=&quot;highlighter-rouge&quot;&gt;fn(d) = V&lt;/code&gt;. Your UI is a function of your state and props are to components what arguments are to functions.&lt;/h4&gt;
 
-&lt;p&gt;React의 장점중에 하나는 컴포넌트를 어디서 또는 어떻게 사용하지에 관해 자바스트립트에서 배운 함수에 대한 통찰/경험을 그대로 이용할수 있다는 점이다. 함수가 파라미터를 받아 어떤 값을 리턴하는데 비해서, React의 함수는 파라미터를 받아 UI의 상태를 Object로 반환(an object representation of your UI)한다는 점에서 다르다. 이런 아이디어는 &lt;code class=&quot;highlighter-rouge&quot;&gt;fn(d) = V&lt;/code&gt; 라는 식으로 표현될 수 있는데, 데이타(d)를 받아 뷰(V) 를 반환하는 함수(fn) 라는 것이다. 유저 인터페이스를 위의 방식으로 생각하는 방식은 UI가 단순히 여러개의 함수들의 조함(composition)으로 이루어져 있다는 사실을 알게해준다. 우리는 이런 장점들을 적극 활용하여 UI를 만들수 있다.&lt;/p&gt;
+&lt;p&gt;React의 장점중에 하나는 컴포넌트를 어디서 또는 어떻게 사용하지에 관해 자바스트립트에서 배운 함수에 대한 통찰/경험을 그대로 이용할수 있다는 점이다. 함수가 파라미터를 받아 어떤 값을 리턴하는데 비해서, React의 함수는 파라미터를 받아 UI의 상태를 Object로 반환(an object representation of your UI)한다는 점에서 다르다. 이런 아이디어는 &lt;code class=&quot;highlighter-rouge&quot;&gt;fn(d) = V&lt;/code&gt; 라는 식으로 표현될 수 있는데, 데이타(d)를 받아 뷰(V) 를 반환하는 함수(fn) 라는 것이다. 유저 인터페이스를 위의 방식으로 생각하는 방식은 UI가 단순히 여러개의 함수들의 조합(composition)으로 이루어져 있다는 사실을 알게해준다. 우리는 이런 장점들을 적극 활용하여 UI를 만들수 있다.&lt;/p&gt;
 
 &lt;h4 id=&quot;2-in-react-your-entire-applications-ui-is-built-using-function-composition-and-jsx-is-an-abstraction-over-those-functions&quot;&gt;2) In React, your entire application’s UI is built using function composition and JSX is an abstraction over those functions.&lt;/h4&gt;
 
-&lt;p&gt;처음 리액트를 사용하는 사람들의 대부분의 반응은, “리액트는 정말 멋지지만 JSX는 마음에 들지 않아요. 복잡성의 분리(separation of concerns)를 해치는 것 같구요.” 을 보인다. 하지만 JSX는 HTML과는 다르고 단순한 템플레이팅 언어를 수준을 넘어선다. JSX의 사용에 있어 집고 넘어갈 두가지 중요한 사실을 살펴보자. 첫번째로 JSX는 &lt;code class=&quot;highlighter-rouge&quot;&gt;React.createElement&lt;/code&gt;의 추상화를 제공하는데 JSX가 쓰여지고 트랜스파일(transpile)이 되면 이것은 실제 DOM을 표현하는 자바스트립트 Object로 변환된다. 이후 리엑트는 이 Object를 분석하고, 이전에 구성된 DOM표현과 비교하여 바뀐 부분에 대해서 DOM 업데이트를 실행하게 된다. 이런 과정은 성능개선을 가져오게 되는되는데 가장 중요한 사실은 JSX가 순전히 자바스크립트라는 점이다. 두번째로 사실은 JSX가 자바스트립트 이므로 언어상 제공되는 여러 이점들(composition, linting, debugging)을 자동으로 얻게 되지만 여전히 HTML의 명시성을 유지할수 있다는 점이다.&lt;/p&gt;
+&lt;p&gt;처음 리액트를 사용하는 사람들의 대부분의 반응은, “리액트는 정말 멋지지만 JSX는 마음에 들지 않아요. 복잡성의 분리(separation of concerns)를 해치는 것 같구요.” 을 보인다. 하지만 JSX는 HTML과는 다르고 단순한 템플레이팅 언어를 수준을 넘어선다. JSX의 사용에 있어 집고 넘어갈 두가지 중요한 사실을 살펴보자. 첫번째로 JSX는 &lt;code class=&quot;highlighter-rouge&quot;&gt;React.createElement&lt;/code&gt;의 추상화를 제공하는데 JSX가 쓰여지고 트랜스파일(transpile)이 되면 이것은 실제 DOM을 표현하는 자바스트립트 Object로 변환된다. 이후 리엑트는 이 Object를 분석하고 이전에 구성된 DOM표현과 비교하여 바뀐 부분에 대해서 DOM 업데이트를 실행하게 된다. 이런 과정은 성능개선을 가져오게 되는되는데 가장 중요한 사실은 JSX가 순전히 자바스크립트라는 점이다. 두번째로 JSX가 자바스트립트 이므로 언어상 제공되는 여러 이점들(composition, linting, debugging)을 자동으로 얻게 되지만 여전히 HTML의 명시성을 유지할수 있다는 점이다.&lt;/p&gt;
 
 &lt;h4 id=&quot;3-components-dont-necessarily-have-to-correspond-to-dom-nodes&quot;&gt;3) “Components don’t necessarily have to correspond to DOM nodes.”&lt;/h4&gt;
 
-&lt;p&gt;처음 리액트를 배울때는 “컴포넌트들은 리액트를 구성하는 요소(Block)들이다. 컴포넌트는 인풋을 받아 서떤 UI를 반환한다” 라고 배운다. 이것이 모든 컴포넌트들이 직접적으로 UI를 반환한다는 말일까? 만약 우리가 다른 컴포넌트를 반환하는 컴포넌트(Higher Order Component)가 필요하면 어떨까? 만약 우리가 상태의 부분을 관리하는 컴포넌트를 원한다면? 또는 넘겨받은 상태를 실행시키는 함수를 반환단다면? 비쥬얼 UI가 아닌 소리를 담당하는 컴포넌트 라면?
+&lt;p&gt;처음 리액트를 배울때는 “컴포넌트들은 리액트를 구성하는 요소(Block)들이다. 컴포넌트는 input을 받아 UI를 반환한다” 라고 배운다. 이것이 모든 컴포넌트들이 직접적으로 UI만을 반환한다는 말일까? 만약 우리가 다른 컴포넌트를 반환하는 컴포넌트(Higher Order Component)가 필요하면 어떨까? 상태의 부분을 관리하는 컴포넌트를 원한다면? 넘겨받은 상태를 실행시키는 함수를 반환하기 원한다면? 비쥬얼 UI가 아닌 소리를 담당하는 컴포넌트 라면?
 리액트는 가장 큰 장점은 반드시 뷰(view)를 반환할 필요가 없다는 점이다. 궁극적으로 리액트 element, null, false 를 반환한다면 모두 허용된다.&lt;/p&gt;
 
 &lt;p&gt;다른 컴포넌트를 반환하는 경우&lt;/p&gt;
@@ -47,43 +59,43 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;p&gt;나는 Ryan Florence의 &lt;a href=&quot;https://www.youtube.com/watch?v=kp-NOggyz54&quot;&gt;React Rally talk&lt;/a&gt;을 좋아하는데 여기서 이러한 원리들을 자세히 다루고 있다.&lt;/p&gt;
+&lt;p&gt;나는 Ryan Florence의 &lt;a href=&quot;https://www.youtube.com/watch?v=kp-NOggyz54&quot;&gt;React Rally talk&lt;/a&gt;을 좋아하는데 여기서 이러한 원리들이 자세히 다뤄지고 있다.&lt;/p&gt;
 
 &lt;h4 id=&quot;4-when-two-components-need-to-share-state-i-need-to-lift-that-state-up-instead-of-trying-to-keep-their-states-in-sync&quot;&gt;4) “When two components need to share state, I need to lift that state up instead of trying to keep their states in sync.”&lt;/h4&gt;
 
-&lt;p&gt;컴포넌트로 구성된 구조는 컴토넌트간 상태를 공유하는 것이 자연적으로 어렵다. 만약 두개의 컴포넌트가 하나의 상태에 의존하고 있다면 그 상태를 어디에 저장해야 할까? 이것은 상당히 유명한 문제로서 ecosystem에 화두를 번젔고 그 결과로 Redux가 소개되었다. Redux의 해결방식은 그 상태를 또다른 장소인 스토어(store)에 넣는것이다. 컴포넌트들은 이 스토어의 한 부분을 subscribe 할수 있고 action을 dispatch 해서 스토어를 업데이트 할수도 있다. 리액트의 해결방법은 두 컴포넌트의 가장 가까운 조상(parent)을 찾아 이 컴토넌트가 상태관리를 맡기고 자식들에게 데이타를 전달해 주는 방식을 택했다. 두 방식 모두 장단점이 존재하지만 이 모두를 이해하는 것이 중요하다.&lt;/p&gt;
+&lt;p&gt;컴포넌트로 구성된 구조/설계는 컴토넌트간 상태공유가 자연적으로 어렵다. 만약 두개의 컴포넌트가 하나의 상태에 의존하고 있다면 어디에 그 상태를 저장해야 할것인가? 이것은 상당히 유명한 문제로서 전체 ecosystem에 화두를 번젔고 그 결과 Redux가 소개되었다. Redux의 해결방식은 그 상태를 또 다른 장소인 스토어(store)에 넣는것이다. 컴포넌트들은 이 스토어의 한 부분을 subscribe 하고 action을 dispatch 해서 스토어를 업데이트 시킬수도 있다. 반면 리액트의 해결방법은 두 컴포넌트의 가장 가까운 조상(parent)을 찾아 이 컴토넌트에 상태관리(state management)를 맡기고 자식들에게 데이타를 전달해 주는 방식을 택한다. 두 방식 모두 장단점이 존재하지만 이 모두를 이해하는 것이 중요하다.&lt;/p&gt;
 
 &lt;h4 id=&quot;5-inheritance-is-unnecessary-in-react-and-both-containment-and-specialization-can-be-achieved-with-composition&quot;&gt;5) “Inheritance is unnecessary in React, and both containment and specialization can be achieved with composition.”&lt;/h4&gt;
 
-&lt;p&gt;리액트는 언제나 함수형 프로그래밍의 원리를 잘 적용시켜 왔다. 상속(Inheritance)에서 함수조합(composition)으로의 변화는 리액트 v0.13이 소개되었을 때 Mixin과 ES6 classes를 지원하지 않기로 함으로써 더욱 확실해 졌다. 그 이유는 Mixin이나 상속을 사용하여 만들수 있는 거의 모든것들이 함수조합를 통해서도, 더 작은 side effect를 발생시키며, 가능하게 때문이다. 만약 당신이 상속에만 얶매어 있는 상태로 리액트를 사용하게 된다면 이런 새로운 사고방식이 어렵거나 자연스레 이해되지 않을수 있다. 다행히도 많은 글들이 당신을 도와줄 수 있는데 특히 리액트에 한정되어 있지 않는 이 비디오, &lt;a href=&quot;https://www.youtube.com/watch?v=wfMtDGfHWpA&quot;&gt;composition over Inheritance&lt;/a&gt;,가 큰 도움이 될것이다.&lt;/p&gt;
+&lt;p&gt;리액트는 언제나 함수형 프로그래밍의 원리를 잘 흡수하여 왔다. 상속(Inheritance)에서 함수조합(composition)으로의 변화는 리액트 v0.13이 소개되었을 때 Mixin과 ES6 classes를 지원하지 않기로 함으로써 더욱 확실해 졌다. 그 이유는 Mixin이나 상속을 사용하여 만들수 있는 거의 모든것들이 함수조합를 통해서 더 작은 side effect를 발생시키며 가능하게 때문이다. 만약 당신이 상속에만 얶매어 있는 상태로 리액트를 처음 보게 된다면 이러한 새로운 사고방식이 어렵거나 자연스레 이해되지 않을수 있다. 다행히도 많은 글들이 당신을 도와줄 수 있는데 특히 리액트에 한정되어 있지 않는 이 비디오, &lt;a href=&quot;https://www.youtube.com/watch?v=wfMtDGfHWpA&quot;&gt;composition over Inheritance&lt;/a&gt;,를 추천한다.&lt;/p&gt;
 
 &lt;h4 id=&quot;6-the-separation-of-container-and-presentational-components&quot;&gt;6) “The separation of container and presentational components.”&lt;/h4&gt;
 
-&lt;p&gt;리엑트 컴포넌트의 내부를 떠올리면 대부분 어떤 states(상태)와 lifecycle hooks 그리고 JSX를 통한 markup이 생각난다. 만일 이 모든 것들은 하나의 컴포넌트에 넣지 않고 두 개의 컴포넌트로 분리해서 관리한다면 어떨까? 첫번째 컴포넌트는 상태와 lifecycle hooks를 가지고 컴포넌트가 &lt;em&gt;어떻게 작동&lt;/em&gt; 되는지에 초점을 맞추고 두번재 컴포넌트는 데이타를 props으로 받아서 컴포넌트가 &lt;em&gt;어떻게 보여야&lt;/em&gt; 하는지에 관심을 두는 것이다. 이러한 방식은 두번째 컴포넌트를 어떤 데이타를 받는지 상관없게 만듦으로 컴포넌트의 재사용성을 증가시켜준다. 데이터와 UI를 분리함으로서 디자이너들도 UI를 데이타(상태, lifecycle hooks) 걱정없이 작업할 수 있게 도와준다.&lt;/p&gt;
+&lt;p&gt;리엑트 컴포넌트의 내부를 떠올리면 대부분 어떤 states(상태)와 lifecycle hooks 그리고 JSX를 통한 markup이 생각난다. 만일 이 모든 것들은 하나의 컴포넌트에 넣지 않고 두 개의 컴포넌트로 분리하여 관리한다면 어떨까? 첫번째 컴포넌트는 상태와 lifecycle hooks를 가지고 컴포넌트가 &lt;em&gt;어떻게 작동&lt;/em&gt; 되는지에 초점을 맞추는 반면 두번재 컴포넌트는 데이타를 props으로 받아서 컴포넌트가 &lt;em&gt;어떻게 보여야&lt;/em&gt; 하는지에 관심을 두게 하는 것이다. 이러한 방법은 두번째 컴포넌트(presentational component)가 어떤 데이타를 받는지 관심이 없게 만듦으로 이 컴포넌트의 재사용성을 높여준다. 이런 분리과정을 통해 디자이너들도 UI를 데이타(상태, lifecycle hooks) 걱정없이 작업할 수 있게 도와준다.&lt;/p&gt;
 
 &lt;h4 id=&quot;7-if-you-try-to-keep-most-of-your-components-pure-stateless-things-become-a-lot-simpler-to-maintain&quot;&gt;7) “If you try to keep most of your components pure, stateless things become a lot simpler to maintain.”&lt;/h4&gt;
 
-&lt;p&gt;이것은 presentational 컴포넌트와 container 컴토넌트를 분리하는 것에서 오는 여러 장점중에 하나이다. 상태는 결국 inconsistency와 함꼐한다. 이 두가지 분리하고 복잡성을 각자 관리하면서 우리는 어플리케이션이 어떻게 작동할지 의 예측을 더욱 쉽게 할수 있게 된다.&lt;/p&gt;
+&lt;p&gt;이것은 presentational 컴포넌트와 container 컴포넌트의 분리에서 오는 여러 장점중에 하나이다. 상태는 결국 inconsistency를 동반하기 때문이다. 이 두가지를 분리하고 복잡성을 각자 관리하면서 우리는 어플리케이션이 어떻게 작동할지 의 예측을 더욱 쉽게 할수 있게 된다.&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Apr 2017 13:20:59 -0400</pubDate>
         <link>http://localhost:4000/react/2017/04/02/React-aha-moments.html</link>
         <guid isPermaLink="true">http://localhost:4000/react/2017/04/02/React-aha-moments.html</guid>
         
         
-        <category>react</category>
+        <category>React</category>
         
       </item>
     
       <item>
-        <title>새로운 시작</title>
-        <description>&lt;p&gt;새로운 블로그를 열었다. 앞으로 여기에 자주 글을 써내려 가야지 ㅎㅎ!&lt;/p&gt;
+        <title>new start</title>
+        <description>&lt;p&gt;새로운 블로그를 열었다. 여기에 쓰여지는 대부분의 글들은 프로그래밍 관련 글이 될것이다. 현재 관심있게 공부하고 있는 javascript ES6와 React관련 기술(Flux, Redux, MobX)과 디자인 패턴들을 위주로 글을 올릴 생각이다.&lt;/p&gt;
 </description>
         <pubDate>Tue, 28 Mar 2017 21:43:59 -0400</pubDate>
-        <link>http://localhost:4000/etc/2017/03/28/start.html</link>
-        <guid isPermaLink="true">http://localhost:4000/etc/2017/03/28/start.html</guid>
+        <link>http://localhost:4000/personal/2017/03/28/start.html</link>
+        <guid isPermaLink="true">http://localhost:4000/personal/2017/03/28/start.html</guid>
         
         
-        <category>etc</category>
+        <category>Personal</category>
         
       </item>
     
@@ -172,7 +184,7 @@ Note that the parameters before the rest parameter are called &lt;em&gt;Usual Pa
         <guid isPermaLink="true">http://localhost:4000/es6/2017/03/28/ES6-rest-params-default.html</guid>
         
         
-        <category>es6</category>
+        <category>ES6</category>
         
       </item>
     
