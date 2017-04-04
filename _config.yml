@@ -10,7 +10,7 @@ exclude:
 
 # Site settings
 title: Junpos
-subtitle: "All About Tech"
+subtitle: "A blog about Web development"
 email: junpos@gmail.com
 name: Jun Kim
 description: >
@@ -20,7 +20,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://junpos.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_bg.jpg"
-logo: "/assets/logo.png"
+logo: "/assets/logo-new.png"
 
 # Build settings
 markdown: kramdown
