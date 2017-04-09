@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ES6: Rest and defaults parameters"
-date:   2017-03-29 01:43:59
+date:   2017-04-01 00:22:13
 author: Jun Kim
 categories: ES6
 ---
