@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/es6/2017/03/28/ES6-rest-params-default.html</loc>
+<loc>http://localhost:4000/personal/2017/03/29/start.html</loc>
 <lastmod>2017-03-28T21:43:59-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/personal/2017/03/28/start.html</loc>
-<lastmod>2017-03-28T21:43:59-04:00</lastmod>
+<loc>http://localhost:4000/es6/2017/04/01/ES6-rest-params-default.html</loc>
+<lastmod>2017-03-31T20:22:13-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/react/2017/04/02/React-aha-moments.html</loc>
 <lastmod>2017-04-02T13:20:59-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/es6/2017/04/02/ES6-spread-operator.html</loc>
-<lastmod>2017-04-02T21:25:04-04:00</lastmod>
+<loc>http://localhost:4000/seo/2017/08/22/SEO-no-follow-no-index.html</loc>
+<lastmod>2017-08-21T20:25:04-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -23,12 +23,15 @@
 <loc>http://localhost:4000/all/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/category/es6/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/category/personal/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/category/es6/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/category/react/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/seo/</loc>
 </url>
 </urlset>

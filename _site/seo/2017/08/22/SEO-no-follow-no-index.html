@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>ES6: Spread Operator</title>
-  <meta name="description" content="ES6에서 소개된 Spread Operator 의 여러가지 활용 방법에 대해서 간단히 알아보자.">
+  <title>SEO: noindex, nofollow and canonical url</title>
+  <meta name="description" content="NOINDEX">
   
   <meta name="author" content="Jun Kim">
   <meta name="copyright" content="&copy; Jun Kim 2017">
@@ -41,10 +41,10 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="ES6에서 소개된 Spread Operator 의 여러가지 활용 방법에 대해서 간단히 알아보자." />
+  <meta property="og:description" content="NOINDEX" />
   <meta property="og:url" content="http://localhost:4000" />
   <meta property="og:site_name" content="Junpos" />
-  <meta property="og:title" content="ES6: Spread Operator" />
+  <meta property="og:title" content="SEO: noindex, nofollow and canonical url" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://localhost:4000/assets/logo.png" />
   <meta property="og:image:type" content="image/png" />
@@ -55,8 +55,8 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ES6: Spread Operator">
-  <meta name="twitter:description" content="ES6에서 소개된 Spread Operator 의 여러가지 활용 방법에 대해서 간단히 알아보자.">
+  <meta name="twitter:title" content="SEO: noindex, nofollow and canonical url">
+  <meta name="twitter:description" content="NOINDEX">
   <meta name="twitter:image" content="http://localhost:4000/assets/logo.png">
   <meta name="twitter:url" content="http://localhost:4000">
   
@@ -65,7 +65,7 @@
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/es6/2017/04/02/ES6-spread-operator.html">
+  <link rel="canonical" href="http://localhost:4000/seo/2017/08/22/SEO-no-follow-no-">
   <link rel="alternate" type="application/rss+xml" title="Junpos" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -96,15 +96,19 @@
           
         
           
-          <li class="nav-link"><a href="/category/es6/">ES6</a>
-          
-        
-          
           <li class="nav-link"><a href="/category/personal/">Personal</a>
           
         
           
+          <li class="nav-link"><a href="/category/es6/">ES6</a>
+          
+        
+          
           <li class="nav-link"><a href="/category/react/">React</a>
+          
+        
+          
+          <li class="nav-link"><a href="/category/seo/">SEO</a>
           
         
           
@@ -123,7 +127,7 @@
 <div class="post-header-container " >
   <div class="scrim ">
     <header class="post-header">
-      <h1 class="title">ES6: Spread Operator</h1>
+      <h1 class="title">SEO: noindex, nofollow and canonical url</h1>
       <p class="info">by <strong>Jun Kim</strong></p>
     </header>
   </div>
@@ -138,18 +142,73 @@
  
 
 <section class="post-meta">
-  <div class="post-date">April 2, 2017</div>
+  <div class="post-date">August 22, 2017</div>
   <div class="post-categories">
   in 
     
-    <a href="/category/ES6">Es6</a>
+    <a href="/category/SEO">Seo</a>
     
   
   </div>
 </section>
 
 <article class="post-content">
-  <p>ES6에서 소개된 <em>Spread Operator</em> 의 여러가지 활용 방법에 대해서 간단히 알아보자.</p>
+  <h3 id="noindex">NOINDEX</h3>
+
+<p><code class="highlighter-rouge">noindex</code> directive는 search engine에게 현재 페이지를 인텍싱 하지 말라는 의미이다. 기본적으로 모든 페이지는 <code class="highlighter-rouge">index</code>로 지정되어 있다. 
+이를 피하기 위해서는 head에 다음과 같은 메타 정보값을 넣어준다.</p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"robots"</span> <span class="na">content=</span><span class="s">"noindex"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre>
+</div>
+<p>search engine은 이를 보고 현재 페이지를 crawl 하지 않을 것이다.</p>
+
+<p>그렇다면 어떤 경우에 사용하는 것인가? 기본적으로 페이지가 검색결과에 노출되지 않기를 바랄때 사용할 수 있다.</p>
+<ul>
+  <li>장바구니 페이지</li>
+  <li>회원가입 성공/실패 페이지</li>
+  <li>Amdin 관련 숨겨진 페이지들</li>
+</ul>
+
+<h3 id="nofollow">NOFOLLOW</h3>
+
+<p>‘nofollow` directive는 search engine에게 현재 페이지에 존재하는 어떤 링크에 link equity를 부여하지 말라는 지시자이다. 링크는 SEO에서 중요한 역할을 차지 하는데 이 이유는 이 링크들이 현재 문서와 검색 query와의 연관성을 계산하는데 사용되어 ranking과 직결되기 때문이다.</p>
+
+<p>역시 기본값은 <code class="highlighter-rouge">follow</code>로 설정되어 있지만 특정 링크의 “rel”값을 <code class="highlighter-rouge">nofollow</code> 로 지정하여</p>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.example.com/"</span> <span class="na">rel=</span><span class="s">"nofollow"</span><span class="nt">&gt;</span>Click here<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+</div>
+<p>search engine으로 하여금 이 링크를 연관성 계산에서 제외하도록 알려줄수 있다.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"robots"</span> <span class="na">content=</span><span class="s">"nofollow"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre>
+</div>
+<p>또는 head에 넣어 현재 페이지의 모든 링크를 제외 시킬수도 있다.</p>
+
+<p>어떤 경우에 사용하면 좋을까?
+crawler가 페이지 안에 링크를 따라가지 않길 원할때 사용한다.</p>
+<ul>
+  <li>링크가 포함된 댓글: <code class="highlighter-rouge">nofollow</code>가 설정되어 있지 않을 경우 갖가지 spam link로 도배될수 있다.</li>
+  <li>paid 링크: 사용자에 의한 정확한 analytics 결과를 얻고자 할때(e.g. clicking event)</li>
+</ul>
+
+<h3 id="canonocal">CANONOCAL</h3>
+
+<p><code class="highlighter-rouge">canonical</code> tag는 여러 버전의 같은 페이지들이 존재할 때 메인 페이지의 url을 지정할 때 사용된다.</p>
+
+<p>예를 들어 <code class="highlighter-rouge">/page-foo</code>, <code class="highlighter-rouge">/page-boo</code> 그리고 /<code class="highlighter-rouge">page-best</code> 가 모두 같은 페이지를 가리킨다고 가정하자.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"canonical"</span> <span class="na">href=</span><span class="s">"http://www.example.com/best-page"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre>
+</div>
+
+<p>그 페이지의 canonical tag를 다음과 같이 설정하면 <code class="highlighter-rouge">/page-best</code> 가 모든 페이지의 대표 url이 되어 검색결과에 나타날 수 있게 된다.</p>
+
 
 </article>
 
@@ -167,7 +226,7 @@
     
     
     
-      <a href="//www.facebook.com/sharer.php?t=ES6%3A+Spread+Operator&u=http%3A%2F%2Flocalhost%3A4000%2Fes6%2F2017%2F04%2F02%2FES6-spread-operator.html"
+      <a href="//www.facebook.com/sharer.php?t=SEO%3A+noindex%2C+nofollow+and+canonical+url&u=http%3A%2F%2Flocalhost%3A4000%2Fseo%2F2017%2F08%2F22%2FSEO-no-follow-no-index.html"
         onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
         <i class="fa fa-facebook-square fa-lg"></i>
       </a>
@@ -192,7 +251,7 @@
     
     
     
-      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fes6%2F2017%2F04%2F02%2FES6-spread-operator.html"
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fseo%2F2017%2F08%2F22%2FSEO-no-follow-no-index.html"
         onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
         <i class="fa fa-linkedin-square fa-lg"></i>
       </a>
@@ -205,7 +264,7 @@
     
     
     
-      <a href="//plus.google.com/share?title=ES6%3A+Spread+Operator&url=http%3A%2F%2Flocalhost%3A4000%2Fes6%2F2017%2F04%2F02%2FES6-spread-operator.html"
+      <a href="//plus.google.com/share?title=SEO%3A+noindex%2C+nofollow+and+canonical+url&url=http%3A%2F%2Flocalhost%3A4000%2Fseo%2F2017%2F08%2F22%2FSEO-no-follow-no-index.html"
         onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
         <i class="fa fa-google-plus-square fa-lg"></i>
       </a>
@@ -239,7 +298,7 @@
     
     
     
-      <a href="//www.pinterest.com/pin/create/button/?description=ES6%3A+Spread+Operator&url=http%3A%2F%2Flocalhost%3A4000%2Fes6%2F2017%2F04%2F02%2FES6-spread-operator.html&media=http://localhost:4000/assets/header_bg.jpg"
+      <a href="//www.pinterest.com/pin/create/button/?description=SEO%3A+noindex%2C+nofollow+and+canonical+url&url=http%3A%2F%2Flocalhost%3A4000%2Fseo%2F2017%2F08%2F22%2FSEO-no-follow-no-index.html&media=http://localhost:4000/assets/header_bg.jpg"
         onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
         <i class="fa fa-pinterest-square fa-lg"></i>
       </a>
@@ -308,7 +367,7 @@
     
     
     
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/es6/2017/04/02/ES6-spread-operator.html') + '&title=ES6: Spread Operator'; return false">
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('http://localhost:4000/seo/2017/08/22/SEO-no-follow-no-index.html') + '&title=SEO: noindex, nofollow and canonical url'; return false">
         <i class="fa fa-reddit-square fa-lg"></i>
       </a>
     
@@ -355,15 +414,19 @@
         
         
         
-          <li class="nav-link"><a href="/category/es6/">ES6</a>
-        
-        
-        
           <li class="nav-link"><a href="/category/personal/">Personal</a>
         
         
         
+          <li class="nav-link"><a href="/category/es6/">ES6</a>
+        
+        
+        
           <li class="nav-link"><a href="/category/react/">React</a>
+        
+        
+        
+          <li class="nav-link"><a href="/category/seo/">SEO</a>
         
         
         
